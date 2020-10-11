@@ -1,0 +1,4 @@
+#ur-stars {
+  display: flex;
+  flex-flow: row nowrap;
+}

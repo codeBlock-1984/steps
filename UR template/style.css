@@ -1,0 +1,300 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.l-flex-row-nowrap {
+  display: flex;
+  flex-flow: row nowrap;
+  /* color: #0675ce; */
+}
+
+.l-flex-col-nowrap {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.l-flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.l-flex-col-wrap {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+button.brand-btn {
+  /* background: #21aaeb; */
+  background: #0675ce;
+  color: #ffffff;
+}
+
+.brand-btn:hover {
+  background: #21aaeb;
+  color: #ffffff;
+}
+
+.app-container {
+  width: 100%;
+}
+
+.main-header {
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.logo {
+  width: auto;
+  height: 60%;
+}
+
+.main-nav {
+  padding: 0 50px;
+}
+
+.banner {
+  width: 100%;
+  height: 600px;
+}
+
+.active {
+  background-color: #0675ce !important;
+}
+
+.banner-image__box {
+  background-color: #000000;
+}
+
+.banner-image {
+  object-fit: cover;
+  width: auto;
+  height: 600px;
+  filter: brightness(50%);
+}
+
+.banner-image__title {
+  font-size: 3.5rem;
+}
+
+.banner-image__text {
+  font-size: 1.2rem;
+}
+
+.view-container {
+  width: 100%;
+  padding-top: 80px;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.view-wrapper {
+  width: 60%;
+  align-items: center;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: solid #0675ce 2px;
+}
+
+.events-tab {
+  width: max-content;
+}
+
+button.events-title-btn {
+  background: none;
+}
+
+button.events-title-btn:focus {
+  box-shadow: none;
+  color: #0675ce;
+}
+
+.events-tab-content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.show-tab {
+  display: flex;
+}
+
+div.hide {
+  display: none;
+}
+
+.review-wrapper {
+  display: flex;
+  flex-flow: nowrap column;
+  border: solid 1px #eeeeee;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 20px 20px 0 20px;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.review-box-title {
+  font-size: 1rem;
+}
+
+.events-container {
+  width: 100%;
+  padding: 20px 0;
+  align-items: flex-end;
+}
+
+.add-btn {
+  cursor: pointer;
+  width: max-content !important;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.events-box {
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 8px -4px #c0c0c0;
+}
+
+.events-text {
+  color: #888888;
+  font-size: 1rem;
+  margin-bottom: .7rem;
+}
+
+.events-detail-main {
+  color: #888888;
+  font-size: .9rem;
+  font-weight: 500;
+  margin-top: .7rem;
+  margin-bottom: .7rem;
+}
+
+.events-title {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.events-date {
+
+}
+
+.events-location {
+
+}
+
+.events-deadline {
+
+}
+
+.deadline {
+  color: #000000;
+}
+
+button.action-btn {
+  background: #ffffff;
+  color: #0675ce;
+  border: solid #0675ce 1px;
+}
+
+.events-view-btn {
+  align-self: flex-end;
+  width: max-content;
+  margin-top: 1rem;
+}
+
+button.action-btn:hover {
+   background: #21aaeb;
+   color: #ffffff;
+}
+
+div.modal-header {
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+div.modal-body {
+  padding: 40px;
+}
+
+div.modal-footer {
+  border-top: none;
+  padding: 2rem 2.5rem;
+}
+
+p.register-event-name {
+  margin-bottom: 3rem;
+}
+
+div.email-box {
+  margin-top: 1.5rem;
+}
+
+input.form-control::placeholder {
+  color: #c0c0c0;
+  font-size: .8rem;
+  opacity: 1;
+}
+
+input.form-control:-ms-input-placeholder {
+  color: #c0c0c0;
+  font-size: .8rem;
+}
+
+input.form-control::-ms-input-placeholder {
+  color: #c0c0c0;
+  font-size: .8rem;
+}
+
+input.form-control::-webkit-input-placeholder {
+  color: #c0c0c0;
+  font-size: .8rem;
+}
+
+.loader-box {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff91;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+  .view-wrapper {
+    width: 80%;
+  }
+
+  .events-side-box {
+    padding: 20px 50px;
+  }
+  
+  .events-text {
+    font-size: .9rem;
+    margin-bottom: .5rem;
+  }
+  
+  .events-title {
+    margin-bottom: .8rem;
+  }
+
+  .register-event-name {
+    margin-bottom: 3rem;
+  }
+}

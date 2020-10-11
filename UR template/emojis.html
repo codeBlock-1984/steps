@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chow - Reviews</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js"></script>
+</head>
+<body id="ur-root">
+  <!-- <div id="fb-root"></div> -->
+<!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=1350280701786771&autoLogAppEvents=1"></script> -->
+  <div class="app-container l-flex-col-nowrap">
+    <header class="main-header l-flex-row-nowrap">
+      <h1 class="logo">Chow!</h1>
+      <nav class="main-nav">
+        <button class="btn brand-btn">Go Premium</button>
+      </nav>
+    </header>
+
+    <section class="view-container l-flex-col-nowrap">
+      <div class="view-wrapper l-flex-col-nowrap">
+        <h1 class="section-title">Reviews</h1>
+        <nav class="events-tab l-flex-row-wrap">
+          <a href="./index.html" class="events-title-btn btn">Stars</a>
+          <a href="./emojis.html" class="events-title-btn btn">Emojis</a>
+          <a href="./comments.html" class="events-title-btn btn">Comments</a>
+          <a href="./starsComments.html" class="events-title-btn btn">Stars and Comments</a>
+          <a href="./emojisComments.html" class="events-title-btn btn">Emojis and Comments</a>
+        </nav>
+        
+        <div id="emojis" class="events-tab-content">
+          <div class="review-wrapper">
+            <div class="events-container l-flex-col-nowrap">
+              <div class="ur-box-review-stats stats" data-feature="Cashout">
+              </div>
+            </div>
+            <div class="events-container l-flex-col-nowrap">
+              <div class="ur-btn-emoji add-btn" data-feature="Cashout">add a review</div>
+            </div>
+          </div>
+          <div class="events-container l-flex-col-nowrap">
+            <div id="ur-box-user-reviews" data-feature="Cashout">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+  </div>
+
+  <script src="http://localhost:3200/index.js"></script>
+</body>
+</html>
