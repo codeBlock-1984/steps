@@ -1,0 +1,15 @@
+{
+  "root": {
+    "value": 40,
+    "left": {
+      "value": 30,
+      "left": { "value": 25, "left": null, "right": null },
+      "right": { "value": 35, "left": null, "right": null }
+    },
+    "right": {
+      "value": 50,
+      "left": { "value": 45, "left": null, "right": null },
+      "right": { "value": 60, "left": null, "right": null }
+    }
+  }
+}
